@@ -22,6 +22,18 @@
   </dependency>
 </dependencies>
 ```
+  - Gradle:
+```gradle
+repositories {
+  maven { url = uri("https://maven.chloedev.de/releases") } // Kotlin
+  maven { url "https://maven.chloedev.de/releases" } // Groovy
+}
+
+dependencies {
+  implementation("me.lunatic:mod-update-checker:1.1")
+}
+```
+
 - Here's a basic example:
 ```java
         // Create a new Update checker, in this example for the mod "modmenu", available at https://modrinth.com/mod/modmenu
