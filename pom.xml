@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.lunatic</groupId>
-    <artifactId>update-checker</artifactId>
-    <version>1.0</version>
+    <artifactId>mod-update-checker</artifactId>
+    <version>1.1</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -43,4 +43,11 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>lunaticRepository</id>
+            <url>https://maven.chloedev.de/releases</url>
+        </repository>
+    </distributionManagement>
 </project>
