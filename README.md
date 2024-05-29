@@ -5,32 +5,30 @@
   - Maven:
 ```xml
 <repositories>
-  ...
   <repository>
-    <id>lunatic-maven-releases</id>
-    <name>Lunatic Repository</name>
-    <url>https://maven.chloedev.de/releases</url>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
   </repository>
 </repositories>
 
 <dependencies>
   ...
   <dependency>
-    <groupId>me.lunatic</groupId>
+    <groupId>com.github.lunatic-gh</groupId>
     <artifactId>mod-update-checker</artifactId>
-    <version>1.1</version>
+    <version>-SNAPSHOT</version>
   </dependency>
 </dependencies>
 ```
   - Gradle:
 ```gradle
 repositories {
-  maven { url = uri("https://maven.chloedev.de/releases") } // Kotlin
-  maven { url "https://maven.chloedev.de/releases" } // Groovy
+  maven { url = uri("https://jitpack.io") } // Kotlin
+  maven { url "https://jitpack.io" } // Groovy
 }
 
 dependencies {
-  implementation("me.lunatic:mod-update-checker:1.1")
+  implementation("com.github.lunatic-gh:mod-update-checker:%VERSION%")
 }
 ```
 
