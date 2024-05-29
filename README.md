@@ -16,7 +16,7 @@
   <dependency>
     <groupId>com.github.lunatic-gh</groupId>
     <artifactId>mod-update-checker</artifactId>
-    <version>-SNAPSHOT</version>
+    <version>%VERSION%</version>
   </dependency>
 </dependencies>
 ```
